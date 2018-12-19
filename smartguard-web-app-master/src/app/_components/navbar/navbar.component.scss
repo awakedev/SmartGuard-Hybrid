@@ -1,0 +1,62 @@
+.content{
+	position: fixed;
+	top:0px;
+	left:0px;
+	right:0px;
+	padding: 20px;
+	z-index: 9;
+	background: rgba(9,9,9,0.2);
+    background-color: rgb(49, 49, 52);
+    background-color: #4487FF;
+    height: 80px;
+}
+
+.links{
+	right: 20px;
+	position: absolute;
+	top:-7px;
+	color: white;
+}
+
+p, a{
+	color:#2f2f2f;
+	margin-right: 40px;
+	color:white;
+	color:white;
+}
+
+p{
+	cursor: pointer;
+}
+
+
+img{
+	height:15px;
+	position: relative;
+	top:-2px;
+	opacity: 1;
+}
+
+.inner_content{
+	position: relative;
+	top: 10px;
+}
+
+.brand{
+	position: relative;
+	top: -9px;
+	left:5px;
+	font-size: 24px;
+	font-weight: 100;
+	font-family: "Lato";
+}
+
+.brand-bold{
+	font-weight: 400;
+}
+
+.btn-login{
+	border: solid white 1px;
+	border-radius: 0px;
+	padding: 6px 20px;
+}

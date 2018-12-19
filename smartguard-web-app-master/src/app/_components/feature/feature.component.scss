@@ -1,0 +1,20 @@
+.feature{
+	position: relative;
+	//border: solid red 1px;
+	height: 250px;
+	background-size: cover;
+	background-position: center center;
+	background: url("http://cdn.hiconsumption.com/wp-content/uploads/2017/07/Advanced-Survival-Training-School.jpg");
+}
+
+.feature-overlay{
+	position: absolute;
+	top: 50%;
+	left:50%;
+	background-color: #4487FF;
+	transform: translate(-50%,-50%);
+}
+.feature-overlay h1{
+	font-size: 4vw;
+	font-weight: 900;
+}

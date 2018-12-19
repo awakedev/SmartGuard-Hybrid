@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900|Raleway|Roboto:100,300,400');
+
+
+h1,h2,h3,h4,h5,h6{
+	//font-family: 'Raleway', sans-serif;
+	font-family: 'Lato', sans-serif;
+	//font-weight: 900;
+}
+
+p{
+	font-family: 'Roboto', sans-serif;
+
+}
+
+.page{
+	min-height: 100vh;
+}
+
+.active-link{
+	filter: blur(1px);
+}

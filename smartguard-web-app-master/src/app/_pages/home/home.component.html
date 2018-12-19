@@ -1,0 +1,130 @@
+<app-navbar></app-navbar>
+
+<div class='container'>
+
+
+	<div class="fullscreen-bg">
+	    <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+	        <source src="assets/Rocky_Beach.webm" type="video/webm">
+	        <source src="video/big_buck_bunny.mp4" type="video/mp4">
+	        <source src="video/big_buck_bunny.ogv" type="video/ogg">
+	    </video>
+	</div>
+
+
+	<div class='overlay animated fadeIn'>
+
+	<div style=''>
+		<img src='assets/sc_port.png' height="300" style="position: absolute;" >
+		<img src='assets/sc_iphone.png' height="300" style="position: relative; right: 80px;">
+	</div>
+
+		<div class='title'>
+			<i class="fas fa-shield-alt"></i>
+			Smart <strong>Guard</strong>
+		</div>
+		<p class='tagline' style="display: none;">
+			Your portable Search & Rescue App
+		</p>
+
+		<p class='feature-list' style="font-size:1.5vw;margin-bottom: 20px;">
+			
+			<button class='btn btn-black btn-default btn-lg btn-rounded btn-feature'>
+				<i class="fas fa-exclamation-triangle"></i><br>
+				View & Share Nearby Dangers
+			</button>
+			<button class='btn btn-black btn-default btn-lg btn-rounded btn-feature'>
+				<i class="fa fa-ambulance"></i><br>
+				Access to UK Search & Rescue   
+			</button>
+			<button class='btn btn-black btn-default btn-lg btn-rounded btn-feature' [routerLink]="'/articles'">
+				<i class="fas fa-medkit"></i><br>
+				Offline Survival Guide
+			</button>
+			
+			
+		</p>
+	
+
+		<div class='btns' >
+			<button class="btn btn-secondary btn-lg btn-action" [routerLink]="'/features'">
+				<i class='fa fa-info-circle'></i><br>
+				Learn More
+			</button>
+			<button class="btn btn-primary btn-lg animated pulse loop infinite btn-download btn-action">
+				<i class="fas fa-arrow-circle-down"></i><br>
+				Download Now (iOS/Android)
+			</button>
+			<br><br>
+			<img style="display:none;" src='https://upload.wikimedia.org/wikipedia/commons/5/5d/Available_on_the_App_Store_%28black%29.png'>
+			<img style="display:none;" src='https://storage.googleapis.com/support-kms-prod/D90D94331E54D2005CC8CEE352FF98ECF639'>
+		</div>
+
+
+
+
+			
+
+	</div>
+
+
+</div>
+
+
+
+<div class='bottom'>
+	<div class='features container'>
+
+		<h1 style="margin-bottom: 80px;">
+			LIFE <strong>SAVING</strong> FEATURES
+		</h1>
+		
+
+		<div class="feature">
+			<img src='assets/sc_port.png' height="300" >
+			<div class="pull-right">
+				<h2>View & Share <strong>Nearby Dangers</strong></h2>
+				<p>
+					Our live map shows you <strong>real</strong> dangers near you, reported by both Search & Rescue and members of the public
+				</p>
+			</div>
+		</div>
+
+		<div class="feature">
+			<img src='assets/sc_port.png' height="300" >
+			<div class="pull-right">
+				<h2><strong>Get notified</strong> when you enter an endangered area</h2>
+				<p>
+					When you enter into an endangered area, you will recieve a push notification warning you to head back.
+				</p>
+			</div>
+		</div>
+
+		<div class="feature">
+			<img src='assets/sc_port.png' height="300" >
+			<div class="pull-right">
+				<h2><strong>Share Location</strong> with Search & Rescue</h2>
+				<p>
+					When you enter into an endangered area, you will recieve a push notification warning you to head back.
+				</p>
+			</div>
+		</div>
+
+		<div class="feature">
+			<img src='assets/sc_port.png' height="300" >
+			<div class="pull-right">
+				<h2>Offline <strong>Survival Guide</strong></h2>
+				<p>
+					When you enter into an endangered area, you will recieve a push notification warning you to head back.
+				</p>
+			</div>
+		</div>
+
+
+
+	</div>
+
+	<app-footer></app-footer>
+</div>
+
+

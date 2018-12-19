@@ -1,0 +1,30 @@
+<app-navbar></app-navbar>
+
+<div class="page ">
+	<div class='content animated fadeIn'  [style.height]="topStyle">
+
+		<div class="btn-back" [routerLink]="'/articles'">
+			<i class="fa fa-arrow-left"></i>
+			Back To Articles
+		</div>
+
+		<div class='text '>
+			<h1>
+				<span class='title-bg'>
+					{{ data.article.title }}
+				</span>
+			</h1>
+			<p>By Ed Byrne on June 5th 2018</p>
+		</div>
+
+	</div>
+
+
+	<div class='articles container' [innerHtml]="data.article.body">
+
+
+		
+
+	</div>
+</div>
+<app-footer></app-footer>

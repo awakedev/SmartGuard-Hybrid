@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<div class='content container animated pulse'>
+
+	<h1 class="page-header">
+		App Features
+	</h1>	
+
+	<p>
+		Mouseover or click on a feature for more information
+	</p>	
+
+	<app-feature *ngFor="let f of features"
+	[cover]="f.cover"
+	[detail]="f.detail"></app-feature>
+
+
+
+	
+
+
+</div>

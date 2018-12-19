@@ -1,0 +1,10 @@
+<div class='feature' (mouseenter)="showFeature()" (mouseleave)="hideFeature()" (click)="showFeature()">
+	<div class='feature-overlay animated fadeIn' *ngIf="_showFeature">
+		<p>
+			{{ detail }}
+		</p>
+	</div>
+	<div class='feature-overlay  animated fadeIn' *ngIf="!_showFeature">
+		<h1>{{ cover }}</h1>
+	</div>
+</div>

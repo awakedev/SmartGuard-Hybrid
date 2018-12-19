@@ -1,0 +1,29 @@
+.example-card{
+	width: 33.333%;
+}
+
+.nav-content{
+	padding: 20px;
+	z-index: 9;
+	width: 100%
+}
+
+.links{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+p{
+	cursor: pointer;
+}
+
+.overview, .actions{
+	display: flex;
+	flex-direction: row;
+	//justify-content: space-between;
+}
+
+agm-map {
+  height: 500px;
+}

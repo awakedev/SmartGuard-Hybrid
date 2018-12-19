@@ -1,0 +1,43 @@
+<app-navbar></app-navbar>
+
+<div class='content container animated pulse'>
+
+<h1 class='page-header'>Explore Dangers</h1>
+
+
+  <agm-map [latitude]="lat" [longitude]="lng" [zoom]='16'>
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map>
+
+
+<div class='overview'>
+  <mat-card class="example-card">
+    <mat-card-content>
+    	<h1>27 Local Warnings</h1>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>VIEW USERS</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="example-card">
+    <mat-card-content>
+    	<h1>345 Total Warnings</h1>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>VIEW ALERTS</button>
+    </mat-card-actions>
+  </mat-card>
+
+
+  <mat-card class="example-card">
+    <mat-card-content>
+      <h1>Submit Warning</h1>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>SUBMIT</button>
+    </mat-card-actions>
+  </mat-card>
+
+</div>
+

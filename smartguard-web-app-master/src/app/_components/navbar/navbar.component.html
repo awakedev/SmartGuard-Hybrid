@@ -1,0 +1,29 @@
+<div class='content'>
+
+	<div class="inner_content">
+		<p [routerLink]="'/'" class='brand'>
+			<i class="fas fa-shield-alt"></i>
+			Smart
+			<strong class='brand-bold'>Guard</strong>
+		</p>
+
+		<div class='links'>
+			<a [routerLink]="'/features'" routerLinkActive="active-link">
+				FEATURES
+			</a>
+			<a [routerLink]="'/dangers'" routerLinkActive="active-link">
+				DANGERS
+			</a>
+			<a [routerLink]="'/articles'" routerLinkActive="active-link">
+				ARTICLES
+			</a>
+			<a [routerLink]="'/login'" class="btn btn-login" *ngIf="!(data.authed | async)" routerLinkActive="active-link">
+				LOGIN
+			</a>
+			<a [routerLink]="'/admin'" class="btn btn-login" *ngIf="data.authed | async" routerLinkActive="active-link">
+				ED BYRNE
+			</a>
+		</div>
+	</div>
+
+</div>

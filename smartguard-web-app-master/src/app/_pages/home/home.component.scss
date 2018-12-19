@@ -1,0 +1,125 @@
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+   
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+
+.overlay{
+	position: absolute;
+	top:50%;
+	left:50%;
+    transform: translate(-50%,-50%);
+    width:100%;
+    text-align: center;
+}
+
+.overlay .title{
+    margin-top: 0px;
+    font-size: 8vw;
+    color: #4487FF;
+    color: white;
+    font-weight: 300;
+}
+.overlay .title strong{
+    color: white;
+    color: #4487FF;
+}
+
+.overlay p{
+    color:white;
+    font-size: 2vw;
+    font-weight: 300;
+}
+
+.tagline{
+    font-size: 3vw;
+}
+
+.btns img{
+	width:250px;
+}
+
+.feature-list{
+    font-size: 6vw;
+}
+
+.btn-black{
+    color:white;
+    background: #2f2f2f;
+    background-color: rgb(49, 49, 52);
+    background: #4487FF;
+    font-weight: 100;
+}
+.btn-black i{
+    margin-right: 4px;
+}
+
+.btn-primary{
+    background: #B74F6F;
+    border-color: white;
+
+}
+
+.btn-lg{
+    padding: 10px 20px;
+    border-radius: 0px;
+    border: solid white 3px;
+}
+
+.btn-download{
+    //background: #bf0000
+    border: solid #8b0000 3px;
+}
+
+.title, .title i{
+    margin-bottom: 40px;
+        text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                0px 8px 13px rgba(0,0,0,0.1),
+                0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.btn-feature{
+    width: 300px;
+}
+
+.btn-action{
+    width: 300px;
+}
+
+
+.bottom{
+    padding-top:40px;
+    position: absolute;
+    top: 100vh;
+    left: 0px;
+    right:0px;
+    background: white;
+}

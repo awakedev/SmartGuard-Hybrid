@@ -1,0 +1,48 @@
+<app-navbar></app-navbar>
+
+<div class="page animated pulse">
+	<div class='content'  [style.height]="topStyle">
+
+		<div class='text animated fadeIn'>
+			<h1>
+				<span class='title-bg'>WELCOME TO THE SURVIVAL GUIDE</span>
+			</h1>
+			<p>Articles to help when you need it most</p>
+		</div>
+
+	</div>
+
+	<div class='articles container' *ngIf="!(data.currentArticlePage | async).loaded">
+	Loading...
+	</div>
+
+	<div class='articles container' *ngIf="(data.currentArticlePage | async).loaded">
+		<h2>Articles</h2>
+
+		<div class="article" *ngFor="let a of (data.currentArticlePage | async).articles" [routerLink]="'/articles/' + a.id">
+			<hr>
+				<h4>{{ a.title }} <span class='label label-success label-small'>New</span></h4>
+				<p>
+					Date created: 10/03/2018
+				</p>
+		</div>
+
+		<button class='btn btn-default' *ngIf="(data.currentArticlePage | async).prevPage" (click)="prevPage()">
+			Previous
+		</button>
+		<button class='btn btn-default pull-right' *ngIf="(data.currentArticlePage | async).nextPage" (click)="nextPage()">
+			Next
+		</button>
+		<br>
+		<br>
+		<br>
+		<br>
+		<p>
+			Current page: {{ (data.currentArticlePage | async).currentPage }}
+			Total pages: {{ (data.currentArticlePage | async).totalPages }}
+		</p>
+
+	</div>
+</div>
+
+<app-footer></app-footer>
